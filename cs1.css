@@ -1,0 +1,48 @@
+.st1{
+    margin: 100px 200px 100px 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+.container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: rgb(176, 176, 230);
+    padding: 10px;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.container > div{
+    background-color: #fff;
+    border: 1px solid black;
+    padding: 10px ;
+    text-align: center;
+}
+.container> div img{
+    height:200px;
+    weight:200px;
+}
+.container > div:hover{
+    background-color: #cf6f6f;
+    border-radius: 20px;
+    border-color: blue;
+}
+.trans{
+  margin: 50px;  
+ width: 100px;
+ height: 200px;
+ border: 1px solid black;
+background: red;
+ transition: width 2s;
+ animation-name:example ;
+animation-duration: 4s;
+}
+@keyframes example{
+    from{background-color: red;}
+    to{background-color: yellow;}
+}
+.trans:hover{
+    width: 300px;
+}
+
